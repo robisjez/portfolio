@@ -169,8 +169,8 @@ footer {
 
 .star {
   display: inline-block;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   background-color: #ccc;
   margin-right: 4px;
   background-image: url('images/star-icon.png'); /* Replace with your star icon */
@@ -180,7 +180,7 @@ footer {
 }
 
 .star.active {
-  transform: scale(2.0); /* Increase the size of active stars */
+  transform: scale(1.8); /* Increase the size of active stars */
   background-color: transparent;
 }
 
