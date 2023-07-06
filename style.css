@@ -180,7 +180,7 @@ footer {
 }
 
 .star.active {
-  transform: scale(1.0); /* Increase the size of active stars */
+  transform: scale(1.8); /* Increase the size of active stars */
   background-color: transparent;
 }
 
