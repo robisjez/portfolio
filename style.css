@@ -25,14 +25,19 @@ header {
   background-color: #2c3e50;
   padding: 20px;
   color: #fff;
+  text-align: center; /* Center-align the text on mobile screens */
+  font-size: 16px;
 }
 
 nav ul {
   display: flex;
+  flex-wrap: wrap; /* Allow navigation items to wrap to the next line */
+  justify-content: center; /* Center-align the navigation items */
 }
 
 nav li {
-  margin-right: 10px;
+  margin: 5px; /* Add some spacing between navigation items */
+  text-align: center; /* Center-align each navigation item's text */
 }
 
 .nav-link {
@@ -44,6 +49,28 @@ nav li {
 .nav-link:hover {
   color: #e1f5fe;
 }
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  /* Styles for mobile devices */
+  header {
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center; /* Center-align navigation items vertically */
+  }
+
+  nav li {
+    margin: 0 10px; /* Add spacing between navigation items vertically */
+  }
+  .nav-link {
+    font-size: 14px; /* Adjust the font size to your preference */
+  }
+}
+
+
 
 /* Section Styles */
 section {
@@ -326,7 +353,7 @@ footer {
 }
 
 .video-item {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .video-title {
@@ -396,3 +423,23 @@ footer {
     font-size: 18px;
   }
 }
+
+.video-item video {
+  max-width: 100%;
+  height: auto;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 6.25%; /* 16:9 aspect ratio (9 / 16 * 100%) */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
